@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap');
+@import 'aos/dist/aos.css';
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Arimo', sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -17,4 +19,157 @@ a {
 
 ul,li {
   list-style: none;
+}
+.navbar_btn , .km-btn {
+  border: none;
+  min-width :180px;
+  background: #3CD17F;
+  color: white;
+  border-radius: 30px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 15px;
+  font-size: 17px;
+  line-height: 0;
+  transition: 0.3s all ease-in-out;
+  &.active,&:hover,&:active {
+    background: #4B42AD;
+  }
+}
+.platform {
+  display: flex;
+  .description {
+    width: 50%;
+    padding: 0 25px 80px 80px;
+    margin-top: auto;
+    h1 {
+      font-size: 36px;
+      line-height: 40px;
+      color: #707070;
+      font-weight: 400;
+      span {
+        text-transform: uppercase;
+        color: #4B42AD;
+      }
+    }
+  }
+  .img-block {
+    padding: 45px;
+    width: 50%;
+    position: relative;
+    border-left :1px solid #ACACAC;
+    .img-rotation {
+      background: url("../public/circle.svg") no-repeat center;
+      background-size: contain;
+      min-height: 620px;
+      animation: spin 60s linear infinite;
+      position: relative;
+      width: 100%;
+    }
+    img {
+      width: auto;
+      height: 270px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+}
+.sell-digital {
+  padding :100px 80px;
+  position: relative;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: black;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+  }
+  .img-1 {
+    height: 200px;
+    width: auto;
+    position: absolute;
+    top: 25%;
+    left: 100px;
+  }
+  .img-3 {
+    height: 200px;
+    width: auto;
+    position: absolute;
+    top: auto;
+    left: 100px;
+    bottom: 80px;
+  }
+  .img-2 {
+    height: 150px;
+    width: auto;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    bottom: auto;
+  }
+  .img-4 {
+    height: 130px;
+    width: auto;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    bottom: 100px;
+  }
+  .img-5 {
+    height: 130px;
+    width: auto;
+    position: absolute;
+    top: auto;
+    right: 100px;
+    bottom: 180px;
+  }
+  .img-6 {
+    height: 225px;
+    width: auto;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    bottom: auto;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+    width: 65%;
+  }
+  span {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 65%;
+    display: block;
+    text-align: center;
+  }
+  .km-white-btn {
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    line-height: 0;
+    font-weight: 400;
+    padding :20px;
+    background: transparent;
+  }
 }

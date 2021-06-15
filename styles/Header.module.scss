@@ -1,6 +1,6 @@
 .header {
-    min-height: 120px;
-    max-height: 120px;
+    min-height: 100px;
+    max-height: 100px;
     padding: 35px 30px;
     display: flex;
     align-items: center;
@@ -9,17 +9,17 @@
     border-bottom: 1px solid #ACACAC;
     .navbar_brand {
         text-transform: uppercase;
-        font-size: 45px;
-        line-height: 50px;
-        font-weight: 500;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 600;
     }
     .navbar_items {
       display: flex;
       li {
         padding: 0 35px;
           a {
-            font-size: 24px;
-            line-height: 28px;
+            font-size: 20px;
+            line-height: 24px;
             color: #333333;
             transition: 0.3s all ease-in-out;
             &.active,&:hover,&:active {
@@ -32,11 +32,11 @@
       background: #3CD17F;
       color: white;
       border-radius: 30px;
-      height: 42px;
+      height: 38px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 25px 15px;
+      padding: 20px 15px;
       transition: 0.3s all ease-in-out;
       &.active,&:hover,&:active {
         background: #4B42AD;
